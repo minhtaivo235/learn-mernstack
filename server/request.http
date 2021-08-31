@@ -1,0 +1,46 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTIwZDg5MDc0ZmM3MTAzODBjY2Q5NzUiLCJpYXQiOjE2MzAwNTUxNjB9.QSb5GP06s3-lmGUSOCYAIMGbeM1Dx8ClLZUwrqtv0yg
+
+{
+  "title": "Nodejs",
+  "description": "description nodejs",
+  "url": "nodejs.org",
+  "status": "LEARNING"
+}
+###
+PUT http://localhost:5000/api/posts/6128ab0e700c26352ca00b7e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTIwZDg5MDc0ZmM3MTAzODBjY2Q5NzUiLCJpYXQiOjE2MzAxNDc4ODF9.sffS7ElpT-neov8TpM-ziX4MkAVodjfzk6DEOxsyx9k
+
+{
+  "title": "Reactjs",
+  "description": "learning react basic",
+  "url": "reactjs.org",
+  "status": "LEARNING"
+}
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTIwZDg5MDc0ZmM3MTAzODBjY2Q5NzUiLCJpYXQiOjE2MzAxNDc4ODF9.sffS7ElpT-neov8TpM-ziX4MkAVodjfzk6DEOxsyx9k
+###
+DELETE  http://localhost:5000/api/posts/6128ab21700c26352ca00b80
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTIwZDg5MDc0ZmM3MTAzODBjY2Q5NzUiLCJpYXQiOjE2MzAxNDc4ODF9.sffS7ElpT-neov8TpM-ziX4MkAVodjfzk6DEOxsyx9k
