@@ -21,7 +21,6 @@ const AuthContextProvider = ({ children }) => {
 
     try {
       const response = await axios.get(`${apiUrl}/auth`);
-      console.log(response);
       if (response.data.success) {
         dispatch({
           type: "SET_AUTH",

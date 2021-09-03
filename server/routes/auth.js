@@ -12,7 +12,6 @@ router.get('/', verifyToken, async (req, res) => {
   try {
     // get user - not password
     const user = await User.findById(req.userId).select('-password')
-    console.log(user);
     if (!user) return res.status(400).json({success: false, message: 'User not found'})
     res.json({success: true, user})
   } catch (error) {
