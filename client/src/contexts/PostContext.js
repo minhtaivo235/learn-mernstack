@@ -31,12 +31,10 @@ const PostContextProvider = ({ children }) => {
   // Post context data
   const postContextData = { postState, getPosts };
 
-  const PostContextProvider = ({ children }) => {
     return (
       <PostContext.Provider value={postContextData}>
         {children}
       </PostContext.Provider>
     );
-  };
 };
 export default PostContextProvider;
