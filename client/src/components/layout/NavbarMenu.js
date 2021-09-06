@@ -25,13 +25,13 @@ const NavbarMenu = () => {
             alt='leartItLogo'
             width='32'
             height='32'
-            className='ms-2'
+            className='ml-2'
           />
           LearnIt
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='me-auto'>
+          <Nav className='mr-auto'>
             <Nav.Link
               className='font-weight-bolder text-white'
               to='/dashboard'
@@ -48,14 +48,14 @@ const NavbarMenu = () => {
             </Nav.Link>
           </Nav>
 
-          <Nav className='me-3'>
+          <Nav className='mr-3'>
             <Nav.Link className='font-weight-bolder text-white' disabled>
               Welcome {username}
             </Nav.Link>
             <Button
               variant='secondary'
               className='font-weight-bolder text-white'
-              onClick={logoutUser}
+              onClick={logout}
             >
               <img
                 src={logoutIcon}

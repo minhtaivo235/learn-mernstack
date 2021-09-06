@@ -18,13 +18,13 @@ Content-Type: application/json
 ###
 POST http://localhost:5000/api/posts
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTIwZDg5MDc0ZmM3MTAzODBjY2Q5NzUiLCJpYXQiOjE2MzAwNTUxNjB9.QSb5GP06s3-lmGUSOCYAIMGbeM1Dx8ClLZUwrqtv0yg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTIwZDg5MDc0ZmM3MTAzODBjY2Q5NzUiLCJpYXQiOjE2MzA4NDg5NzN9.7NpT-OTCNIrVMhBIrEDvZKT2oHJBmWtEcZsPB1xL_DU
 
 {
-  "title": "Nodejs",
+  "title": "REACT HOOK",
   "description": "description nodejs",
   "url": "nodejs.org",
-  "status": "LEARNING"
+  "status": "LEARNED"
 }
 ###
 PUT http://localhost:5000/api/posts/6128ab0e700c26352ca00b7e
