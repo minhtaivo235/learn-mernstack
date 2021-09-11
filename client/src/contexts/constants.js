@@ -1,4 +1,5 @@
-export const apiUrl = process.env.Node_ENV !== 'production' ? 'http://localhost:5000/api' : 'https://blooming-brook-83446.herokuapp.com/api'
+export const apiUrl = 'https://blooming-brook-83446.herokuapp.com/api'
+// export const apiUrl = process.env.Node_ENV !== 'production' ? 'http://localhost:5000/api' : 'https://blooming-brook-83446.herokuapp.com/api'
 export const LOCAL_STORAGE_TOKEN_NAME = 'learnIT'
 
 export const POSTS_LOADED_SUCCESS = 'POSTS_LOADED_SUCCESS'
